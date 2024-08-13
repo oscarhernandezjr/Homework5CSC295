@@ -1,0 +1,7 @@
+﻿The 'IsBalanced' method in the 'ParenthesisChecker' class uses the stack's Last-In-First-Out (LIFO) property to validate the parentheses in an expression. The input string's characters are iterated over by the procedure. An opening parenthesis ('(', '{', '[') is put into the stack whenever it is discovered. The method determines whether the stack is not empty and whether the top element of the stack matches the relevant opening parenthesis when it encounters a closing parenthesis (')', '}', ']'). The top element is removed from the stack if they match. The expression is considered imbalanced if a closing parenthesis is encountered and there is no match or the stack is empty.
+
+The `IsBalanced` method was designed to handle various scenarios, including mixed-type brackets, nested parentheses, and edge cases like empty strings. The method returns a Boolean value indicating whether the expression is balanced.
+
+One of the primary challenges encountered during the implementation was ensuring that the method correctly identified unbalanced expressions.This challenge was addressed by carefully managing the stack operations and ensuring that each closing parenthesis was matched with the correct opening parenthesis.
+
+The Balanced Parentheses Checker demonstrates the effective use of the stack data structure in solving a common parsing problem. This assignment highlights the importance of stack operations in software development, particularly in scenarios involving nested and sequential data.
